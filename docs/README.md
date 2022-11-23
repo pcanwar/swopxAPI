@@ -62,6 +62,13 @@ Upon signing in, you will have access to your account, where you can fully use S
 } 
 ```
 
+Returns 
+
+```json
+
+
+```
+
 
 Possible errors
 
@@ -75,7 +82,6 @@ Possible errors
 ```API
   POST /api/login
 ```
-
 
 https://external-dev.swopx.com/login
 
@@ -91,6 +97,66 @@ https://external-dev.swopx.com/login
     "password": "xxx"
 } 
 ```
+
+retruns 
+
+```json
+{
+    "success": true,
+    "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "info": {
+        "name": "admin",
+        "regTime": 1669045871,
+        "requests": {
+            "analytics": 497,
+            "appraisal": 498
+        },
+        "stripe": {
+            "cardBrand": null,
+            "customerID": null,
+            "cardMask": null
+        },
+        "subscriptions": {
+            "package_analytics": {
+                "subscriptionID": null,
+                "active": false,
+                "expiration": null
+            },
+            "package_all": {
+                "subscriptionID": null,
+                "active": false,
+                "expiration": null
+            },
+            "free_trial": {
+                "subscriptionID": null,
+                "active": false,
+                "expiration": null
+            },
+            "package_appraisal": {
+                "subscriptionID": null,
+                "active": false,
+                "expiration": null
+            },
+            "custom": {
+                "subscriptionID": null,
+                "active": false,
+                "expiration": null
+            }
+        }
+    },
+    "key": "a6609ca7-a2f2-4ef0-80ff-e86f47372364"
+}
+```
+
+#### Generate key
+
+```API
+  POST /api/generate
+```
+
+https://external-dev.swopx.com/generate
+
+
 
 
 #### Analytics
