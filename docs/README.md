@@ -42,7 +42,7 @@ Upon signing in, you will have access to your account, where you can fully use S
 
 #### Register
 
-```http
+```API
   POST /api/register
 ```
 
@@ -54,6 +54,14 @@ Upon signing in, you will have access to your account, where you can fully use S
 | `password` | `string` | **Required**. Your API password |
 | `name` | `string` | Your API name |
 
+```Example of register 
+{
+    "email": "admin@example.com",
+    "password": "xxx",
+    "name: "admin"
+} 
+```
+
 
 Possible errors
 
@@ -64,12 +72,25 @@ Possible errors
 
 #### Login
 
-<!-- 
-POST https://external-dev.swopx.com/login
+```API
+  POST /api/register
+```
+
+
+https://external-dev.swopx.com/login
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `string` | **Required**. Your API email |
+| `password` | `string` | **Required**. Your API password |
+
+
+```Example of login
 {
-    "email": "xdekarty@gmail.com",
+    "email": "admin@example.com",
     "password": "xxx"
-} -->
+} 
+```
 
 #### Get api info
 
