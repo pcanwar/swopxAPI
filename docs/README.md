@@ -24,33 +24,54 @@ Having a SwopX account allows you to use sign-in-only features and tools such as
 ```
 
 
-Register an Account
+### Register an Account
 Head over to ….. page and provide a username, email, and password for your account.
 
 
-2. Verify Your Email
+### Verify Your Email
 A confirmation link 🔗 will be sent to your email address to verify your sign-up request.
 Once you've clicked on the link, your account set-up process is complete, and you may sign in.
 
 
 
-3. Using Your Account
+### Using Your Account
 Upon signing in, you will have access to your account, where you can fully use SwopX’s features, such as generating API keys 🔑, and interact with Data Analytics, NFT Appraisals, and Fraud Protection.
 
 
 ## API Reference
 
-#### Get all items
+#### Register
 
 ```http
-  GET /api/items
+  POST /api/register
 ```
+
+ https://external-dev.swopx.com/register
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `email` | `string` | **Required**. Your API email |
+| `password` | `string` | **Required**. Your API password |
+| `name` | `string` | Your API name |
 
-#### Get item
+
+Possible errors
+
+| Error Code | Description                |
+| :--------  | :------------------------- |
+| `400 Bad Request`  | Required fields were invalid, not specified |
+| `401 Unauthorized`  | The access token is invalid or has revoked |
+
+#### Login
+
+<!-- 
+POST https://external-dev.swopx.com/login
+{
+    "email": "xdekarty@gmail.com",
+    "password": "xxx"
+} -->
+
+#### Get api info
 
 ```http
   GET /api/items/${id}
