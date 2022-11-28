@@ -1,3 +1,4 @@
+
 # Introduction
 ---
 
@@ -50,11 +51,12 @@ Upon signing in, you will have access to your account, where you can fully use S
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `email` | `string` | **Required**. Your API email |
-| `password` | `string` | **Required**. Your API password |
-| `name` | `string` | Your API name |
+| `email`       | `string`      | **Required**. Your API email |
+| `password`    | `string`      | **Required**. Your API password |
+| `name`        | `string`      | Your API name |
 
-```Example of register 
+```
+Example of register 
 {
     "email": "admin@example.com",
     "password": "xxx",
@@ -62,7 +64,7 @@ Upon signing in, you will have access to your account, where you can fully use S
 } 
 ```
 
-Returns 
+##### Sample Response 
 
 ```json
 
@@ -98,16 +100,17 @@ https://external-dev.swopx.com/login
 } 
 ```
 
-retruns 
+##### Sample Response 🫙 
+ 
 
 ```json
 {
-    "success": true,
+    "success": true, // false
     "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "info": {
         "name": "admin",
         "regTime": 1669045871,
-        "requests": {
+        "requests": {  
             "analytics": 497,
             "appraisal": 498
         },
