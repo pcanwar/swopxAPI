@@ -2,7 +2,7 @@
 # Introduction
 ---
 
-Welcome to the SwopX APIs documentation.
+__Welcome to the SwopX APIs documentation.__
 
 SwopX is the leading blockchain with Artificial Intelligence and Machine Learning, search, API, and analytics platform for NFTs on Ethereum. We use AI and Machine Learning for millions of NFTs to give price forecasts for any NFT, even with no prior price or sales history.
  

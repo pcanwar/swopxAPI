@@ -13,6 +13,11 @@ https://external-dev.swopx.com/execute/analytics
 | :-------- | :------- | :------------------------- |
 | `addresses` | `list` | **Required**. Smart contract addresses |
 
+
+<!-- tabs:start -->
+
+#### **POST**
+
 ```Example of Analytics 
 {
     "addresses": [
@@ -21,6 +26,20 @@ https://external-dev.swopx.com/execute/analytics
     ]
 } 
 ```
+
+#### **Javascript**
+
+```javascript
+const res = await fetch('https://external-dev.swopx.com/execute/analytics');
+const json = await res.json();
+console.log(json);
+
+```
+
+#### **Response**
+
+<!-- tabs:end -->
+
 
 Possible errors
 
@@ -43,6 +62,11 @@ https://external-dev.swopx.com/execute/appraisal
 | :-------- | :------- | :------------------------- |
 | `imageLinks` | `list` | **Required**. image links of the NFTs |
 
+
+<!-- tabs:start -->
+
+#### **POST**
+
 ```Example of Appraisal
 {
     "imageLinks": [
@@ -51,6 +75,20 @@ https://external-dev.swopx.com/execute/appraisal
     ]
 } 
 ```
+
+#### **Javascript**
+
+```javascript
+const res = await fetch('https://external-dev.swopx.com/execute/analytics');
+const json = await res.json();
+console.log(json);
+
+```
+
+#### **Response**
+
+<!-- tabs:end -->
+
 
 Possible errors
 
@@ -74,11 +112,32 @@ POST https://external-dev.swopx.com/execute/top
 | :-------- | :------- | :------------------------- |
 | `count` | `string` | **Required**. top # of top price collections  |
 
+
+
+
+<!-- tabs:start -->
+
+#### **POST**
+
 ```Example of Top Price Collections 
 {
     "count": "5"
 }
 ```
+
+#### **Javascript**
+
+```javascript
+const res = await fetch('https://external-dev.swopx.com/execute/top');
+const json = await res.json();
+console.log(json);
+```
+
+#### **Response**
+
+<!-- tabs:end -->
+
+
 
 Possible errors
 
@@ -102,6 +161,12 @@ POST https://external-dev.swopx.com/execute/transactions
 | `addresses` | `list` | **Required**. list of smart contracts  |
 | `days` | `string` | **Required**. number of days  |
 
+
+
+<!-- tabs:start -->
+
+#### **POST**
+
 ```Example of Collection Transactions Info 
 {
     "addresses": [
@@ -114,6 +179,19 @@ POST https://external-dev.swopx.com/execute/transactions
     ]
 }
 ```
+
+#### **Javascript**
+
+```javascript
+const res = await fetch('https://external-dev.swopx.com/execute/transactions');
+const json = await res.json();
+console.log(json);
+```
+
+#### **Response**
+
+<!-- tabs:end -->
+
 
 Possible errors
 
