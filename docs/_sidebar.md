@@ -2,13 +2,13 @@
 <!-- docs/_sidebar.md -->
 
 * [Home](/)
-* [ Getting Started][def1]
+* [ 🚀 Getting Started][def1]
 ** [Register](gettingStarted/register.md)
 ** [Verify your Email](gettingStarted/verifyEmail.md)
 ** [Login](gettingStarted/login.md)
 ** [Generate key](gettingStarted/generatekey.md)
 
-* [API Endpoints][def2]
+* [ 🎯 API Endpoints][def2]
 ** [Analytics](apiEndpoint/analytics.md)
 ** [Appraisal](apiEndpoint/appraisal.md)
 ** [Top Price Collections](apiEndpoint/topPriceCollections.md)

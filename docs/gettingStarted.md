@@ -7,19 +7,7 @@ Having a SwopX account allows you to use sign-in-only features and tools such as
 ```
 
 
-<!-- <dl>
-  <dt>Register</dt>
-  <dd>Verify Email</dd>
-  <dt>Login</dt>
-  <dt>Generate Key</dt>
-</dl> -->
-
-
-<!-- ## API Reference -->
-
-
-## Get API Info
+**Get API Info**
 
 ```http
   GET /api/items/${id}
-```
