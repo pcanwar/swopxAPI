@@ -227,3 +227,9 @@ https://external-dev.swopx.com/generate
     "key": "d8a471810919cd2effc275d2-"
 }
 ```
+
+## Get API Info
+
+```http
+  GET /api/items/${id}
+```
