@@ -32,9 +32,27 @@ Example of register
 #### **Javascript**
 
 ```javascript
-const res = await fetch('https://external-dev.swopx.com/register');
-const json = await res.json();
-console.log(json);
+const fetch = require('node-fetch')
+
+let account = {
+    "email": "example@gmail.com",
+    "password": "example",
+    "name": "example"
+};
+
+const reg = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/register',
+    {
+        method: 'POST',
+        body: JSON.stringify(account),
+        headers: { 'Content-Type': 'application/json' }
+    }
+    );
+    const json = await res.json();
+    console.log(json);
+}
+
+reg();
 
 ```
 

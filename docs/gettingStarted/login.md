@@ -25,9 +25,23 @@ https://external-dev.swopx.com/login
 
 #### **Javascript**
 ```javascript
-const res = await fetch('https://external-dev.swopx.com/login');
-const json = await res.json();
-console.log(json);
+let account = {
+    "email": "example@gmail.com",
+    "password": "example"
+};
+
+
+const login = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/login',
+    {
+        method: 'POST',
+        body: JSON.stringify(account),
+        headers: { 'Content-Type': 'application/json' }
+    }
+    );
+    const json = await res.json();
+    console.log(json);
+}
 ```
 
 #### **Response**

@@ -14,5 +14,8 @@
 ** [Top Price Collections](apiEndpoint/topPriceCollections.md)
 ** [Collection Transactions Info](apiEndpoint/collectionInfo.md)
 
-[def1]: gettingStarted.md "Get Started and Create an account"
+[def1]: gettingStarted.md 
 [def2]: apiEndpoints.md
+
+
+<!--"Get Started and Create an account" -->
