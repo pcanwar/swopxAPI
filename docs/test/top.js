@@ -8,13 +8,11 @@ let header = {
 }
 
 let req = {
-    "addresses": [
-        "0x521f9c7505005cfa19a8e5786a9c3c9c9f5e6f42"
-    ]
-};
+    "count": "3"
+}
 
-const analytics = async() =>{
-    const res = await fetch('https://external-dev.swopx.com/execute/analytics',
+const appraisal = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/execute/top',
     {
         method: 'POST',
         headers: header,
@@ -25,4 +23,4 @@ const analytics = async() =>{
 
 }
 
-analytics();
+appraisal();

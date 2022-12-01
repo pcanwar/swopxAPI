@@ -29,9 +29,32 @@ POST https://external-dev.swopx.com/execute/top
 #### **Javascript**
 
 ```javascript
-const res = await fetch('https://external-dev.swopx.com/execute/top');
-const json = await res.json();
-console.log(json);
+const fetch = require('node-fetch')
+
+const key = 'YOUR KEY'
+
+let header = {
+    "swopx-api": key,
+    'Content-Type': 'application/json'
+}
+
+let req = {
+    "count": "3"
+}
+
+const top = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/execute/top',
+    {
+        method: 'POST',
+        headers: header,
+        body: JSON.stringify(req)
+    });
+    const json = await res.json();
+    console.log(json.data);
+
+}
+
+top();
 ```
 
 #### **Response**

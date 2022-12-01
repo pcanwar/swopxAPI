@@ -28,6 +28,35 @@ https://external-dev.swopx.com/execute/analytics
 
 ```javascript
 
+const fetch = require('node-fetch')
+
+const key = 'YOUR KEY'
+
+let header = {
+    "swopx-api": key,
+    'Content-Type': 'application/json'
+}
+
+let req = {
+    "addresses": [
+        "0x521f9c7505005cfa19a8e5786a9c3c9c9f5e6f42"
+    ]
+};
+
+const analytics = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/execute/analytics',
+    {
+        method: 'POST',
+        headers: header,
+        body: JSON.stringify(req)
+    });
+    const json = await res.json();
+    console.log(json.data);
+
+}
+
+analytics();
+
 ```
 
 #### **Response**
