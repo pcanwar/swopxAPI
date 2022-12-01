@@ -39,7 +39,7 @@ let header = {
 }
 
 let req = {
-    "count": "3"
+    "count": "20"
 }
 
 const top = async() =>{

@@ -1,5 +1,8 @@
 __Appraisal__ 
 
+Just upload a link to a picture, and let our system analyze it. We will provide the price and the list of other NFTs that are most similar to your image.
+
+
 ```API
   POST /api/appraisal
 
@@ -18,7 +21,7 @@ https://external-dev.swopx.com/execute/appraisal
 ```JSON
 {
     "imageLinks": [
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/isjFotcMs.PA/v1/1200x-1.jpg"
+        "https://spaceplace.nasa.gov/gallery-sun/en/solar-flare.en.jpg"
     ]
 } 
 ```
