@@ -7,7 +7,7 @@ let header = {
 }
 
 const generate = async() =>{
-    const res = await fetch('https://external-dev.swopx.com/enerate',
+    const res = await fetch('https://external-dev.swopx.com/generate',
     {
         method: 'GET',
         headers: header

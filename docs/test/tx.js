@@ -14,14 +14,22 @@ let req = {
 };
 
 const analytics = async() =>{
-    const res = await fetch('https://external-dev.swopx.com/execute/analytics',
+    const res = await fetch('https://external-dev.swopx.com/execute/transactions',
     {
         method: 'POST',
         headers: header,
         body: JSON.stringify(req)
     });
     const json = await res.json();
-    console.log(json);
+    console.log(json.data[0].data['transactions']);
+
+    // if (json.data){
+    //     for (var i = 0; i < json.data.length; i++) {
+    //         var item = json.data[i];
+    //         // dictionary[key(item)] = value ? value(item) : item;
+    //         console.log();
+    //     } 
+    // }
 
 }
 
