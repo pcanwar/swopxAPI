@@ -32,11 +32,43 @@ POST https://external-dev.swopx.com/execute/transactions
 
 #### **Javascript**
 
+
 ```javascript
-const res = await fetch('https://external-dev.swopx.com/execute/transactions');
-const json = await res.json();
-console.log(json);
+
+const fetch = require('node-fetch')
+
+const key = 'YOUR API KEY'
+
+let header = {
+    "swopx-api": key,
+    'Content-Type': 'application/json'
+}
+
+let req = {
+    "addresses": [
+        "0x521f9c7505005cfa19a8e5786a9c3c9c9f5e6f42"
+    ],
+    "days": [
+        "7"
+    ]
+};
+
+const tx = async() =>{
+    const res = await fetch('https://external-dev.swopx.com/execute/transactions',
+    {
+        method: 'POST',
+        headers: header,
+        body: JSON.stringify(req)
+    });
+    const json = await res.json();
+    console.log(json.data[0].data['transactions']);
+
+}
+
+tx();
+
 ```
+
 
 #### **Response**
 

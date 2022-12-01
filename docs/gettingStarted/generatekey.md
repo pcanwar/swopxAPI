@@ -65,4 +65,5 @@ Possible errors
 | `404 Not found`  | The requested resource does not exist |
 | `503 Unhandled`  | Not ready to handle a request |
 |`Unexpected token in JSON at position #` | Check the JSON formatting |
+|`Exceeded`| API Requests Exceeded |
 

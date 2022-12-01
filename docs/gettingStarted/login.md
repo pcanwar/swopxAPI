@@ -30,7 +30,6 @@ let account = {
     "password": "example"
 };
 
-
 const login = async() =>{
     const res = await fetch('https://external-dev.swopx.com/login',
     {

@@ -27,9 +27,6 @@ https://external-dev.swopx.com/execute/analytics
 #### **Javascript**
 
 ```javascript
-const res = await fetch('https://external-dev.swopx.com/execute/analytics');
-const json = await res.json();
-console.log(json);
 
 ```
 
