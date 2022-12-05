@@ -20,4 +20,3 @@ const reg = async() =>{
 
 reg();
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNjY5ODIzMjA2LCJleHAiOjE2NzA0MjgwMDZ9.LuLLCEIvurDaFUJ2czeas0rV9-ahNU-Qmar91MJ4VuM
