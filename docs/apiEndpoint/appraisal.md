@@ -1,5 +1,7 @@
 __Appraisal__ 
 
+Let our AI determine the accurate price for the NFT image you upload. Trained with millions of NFT images and price history data points, our algorithms will come up with the best price you should assign to your newly minted NFT.
+
 Just upload a link to a picture, and let our system analyze it. We will provide the price and the list of other NFTs that are most similar to your image.
 
 

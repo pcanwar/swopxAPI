@@ -1,4 +1,7 @@
-__Analytics__
+__Forecasts__
+
+SwopX Data Analytics provides valuable insights into all existing NFTs. Easily get access to the price forecast of an NFT to make informed decisions. Additionally, SwopX provides a dashboard with active trends which monitor volume, purchases, price appraisals and the amount of wallets interacting to give you the ability to browse and rank collections that you are most interested in.
+
 
 ```API
   POST /api/analytics
