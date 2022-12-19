@@ -14,8 +14,16 @@
 ** [Top Collections](apiEndpoint/topPriceCollections.md)
 ** [Transactions](apiEndpoint/collectionInfo.md)
 
+
+* [ 🏦 API Endpoints Lending][def3]
+** [Borrower](lending/borrower.md)
+** [Lender](lending/lender.md)
+
+
 [def1]: gettingStarted.md 
 [def2]: apiEndpoints.md
+[def3]: swopXcontractEndpoints.md
+
 
 
 <!--"Get Started and Create an account" -->
