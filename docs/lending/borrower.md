@@ -39,12 +39,6 @@ Example of submitting a request
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -103,12 +97,6 @@ Example of submitting a payment schedule
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -173,12 +161,6 @@ Example of rejecting Offer from a lender
 
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -310,12 +292,6 @@ Example of submitting a rejection from the borrower
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON

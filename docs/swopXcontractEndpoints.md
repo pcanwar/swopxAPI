@@ -50,12 +50,6 @@ ClientID:
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -208,11 +202,6 @@ POST api/auth/connect
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-```
 
 #### **Response**
 ```

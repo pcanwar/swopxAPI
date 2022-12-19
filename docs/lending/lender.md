@@ -43,12 +43,6 @@ Example of submitting a schedule offer
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -93,12 +87,6 @@ Example of submitting a payment offer
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-
-```
 
 #### **Response**
 ```JSON
@@ -286,11 +274,6 @@ https://external-dev.swopx.com/execute/swopx/listings/lend
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-```
 
 #### **Response**
 ```
@@ -354,11 +337,6 @@ https://external-dev.swopx.com/execute/swopx/listings/extend
 }
 ```
 
-#### **Javascript**
-
-```javascript
-
-```
 
 #### **Response**
 ```
