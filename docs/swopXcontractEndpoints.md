@@ -110,9 +110,6 @@ ClientID:
             "favorites": [
                 "61547c4de4e07643b12e69b2",
                 "616838ab45370b5dc12100d5",
-                "6165db1045370b5dc120e4c6",
-                "615dbfffcf042f7f8f8cac20",
-                "615f0cf0149ada0a71f3de4a",
                 "618d82bcd8229e58934d62b5"
             ],
             "followers": [],
@@ -172,6 +169,22 @@ __Register Wallet__
 
 At your local server, you should ```Sign``` a message.
 
+The message that needs to be signed can be as following :
+
+```message
+Welcome to SwopX!
+
+Please sign to let us verify that you are the owner of this address:
+0xcD126aC67d61d6A699892.
+
+This will not cost you any gas fees.
+
+By signing you accept the SwopX Terms of Service: https://swopx.com/terms
+
+Timestamp: 1655239676
+```
+
+
 ```
 POST api/auth/connect
 ```
@@ -215,3 +228,50 @@ POST api/auth/connect
 ```
 
 <!-- tabs:end -->
+
+
+
+_________
+
+
+
+### Get All Borrowing
+
+```API
+GET listings/borrowings?collection=0xtestborrow&borrowerID=jdsfjk&borrowerAddress=0xksfdjdfs&page=2
+```
+
+#### Available query params are:
+
+| Query params | Description |
+| :-------------- | :-------------- | 
+| `borrowerID` | `borrower ID` | 
+| `borrowerAddress` | `borrower wallet address` | 
+| `page` | `1656719350` | 
+| `chainID` | `network Id e.g ethereum 1` | 
+| `lenderID` | `lender ID` | 
+| `lenderAddress` | `lender wallet address ` | 
+| `collection` | `collection address` | 
+
+
+#### Get all borrowing listings grouped by unique collection addresses
+
+https://external-dev.swopx.com/execute/swopx/listings/borrowings
+
+
+This returns an array of unique collection addresses, then you can use ```GET /listings/borrowings?collection=0xxxxxx``` to filter by a certain collection that user expands
+
+
+```API
+GET /listings/borrowings/collections
+```
+https://external-dev.swopx.com/execute/swopx/listings/borrowings/collections
+
+
+### Get all borrowing & lending receipts info associated with a certain wallet address
+
+```API
+GET listings/receipts?wallet=WalletAddress
+```
+
+https://external-dev.swopx.com/execute/swopx/listings/receipts?wallet=0x53689fc174b85b79a16737f218b64f5b66584093
