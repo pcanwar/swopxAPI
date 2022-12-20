@@ -47,7 +47,6 @@ __________
 __________
 
 
-
 Once you've confirmed your account, your account set-up process is complete, and you may sign in.
 
 ________
