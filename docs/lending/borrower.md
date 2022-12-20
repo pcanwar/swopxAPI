@@ -89,7 +89,7 @@ An example of the `payment schedule` terms (Amortization schedule example):
 
 <!-- tabs:start -->
 
-#### **POST**
+#### **POST**g
 
 ```
 Example of submitting a payment schedule 
