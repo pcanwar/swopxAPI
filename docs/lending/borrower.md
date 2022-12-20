@@ -2,9 +2,14 @@ __Borrower Request__
 
 * Submit Borrower Request
 
+
 ```API
 POST listings/borrow
 ```
+
+| :point_up:    | chain id is the Ids of the chaains that you want to interect with|
+|---------------|:------------------------|
+| :exclamation:    | Ethereum mainnet, Ethereum Goerli testnet , Avalanche mainnet|
 
 https://external-dev.swopx.com/execute/swopx/listings/borrow
 
@@ -12,6 +17,7 @@ https://external-dev.swopx.com/execute/swopx/listings/borrow
 | :-------- | :------- | :------------------------- |
 | `borrowerClientID` | `string` | **Required**. the database _id of the user willing to borrow (a borrowerWalletID can be used instead with a wallet address of the user) |
 | `borrowerAddress` | `string` | **Required**. borrower address |
+| `chainID` | `string` | **Required**. chain id of the network |
 | `collectionAddress` | `string` | **Required**. NFT collection address |
 | `tokenID` | `string` | **Required**. NFT token ID |
 | `data` | `string` |  Object value |
@@ -29,9 +35,10 @@ https://external-dev.swopx.com/execute/swopx/listings/borrow
 ```
 Example of submitting a request 
 {
-    "borrowerClientID": "6b12e69a1",
+    "borrowerClientID": "61547bf0e4e07643b12e69a1",
     "borrowerAddress": "0xtestborrow",
-    "collectionAddress": "0xa7d8dCF4Aebabd5bD270",
+    "chainID": 5,
+    "collectionAddress": "0xa7d8d9ef8D8Ce8992Df33D8b8CF4Aebabd5bD270",
     "tokenID": "9000500",
     "data": {
         "randomField": "randomValue"

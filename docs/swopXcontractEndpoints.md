@@ -242,8 +242,10 @@ GET listings/borrowings?collection=0xtestborrow&borrowerID=jdsfjk&borrowerAddres
 | `lenderAddress` | `lender wallet address ` | 
 | `collection` | `collection address` | 
 
+______________
 
-#### Get all borrowing listings grouped by unique collection addresses
+#### Get all borrowing listings grouped
+
 
 https://external-dev.swopx.com/execute/swopx/listings/borrowings
 
@@ -252,12 +254,26 @@ This returns an array of unique collection addresses, then you can use ```GET /l
 
 
 ```API
-GET /listings/borrowings/collections
+GET /listings/borrowings
 ```
-https://external-dev.swopx.com/execute/swopx/listings/borrowings/collections
 
+__Get listing by unique collection addresses__
 
-### Get all borrowing & lending receipts info associated with a certain wallet address
+```
+https://external-dev.swopx.com/execute/swopx/listings/borrowings??collection=0124xxxxx
+
+```
+
+__Get all listing by a unique chain id__
+
+```
+https://external-dev.swopx.com/execute/swopx/listings/borrowings?chainID=5
+
+```
+
+______________
+
+#### Get all borrowing & lending receipts info associated with a certain wallet address
 
 ```API
 GET listings/receipts?wallet=WalletAddress
