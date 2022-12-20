@@ -195,14 +195,12 @@ The formula for calculating the interest on a loan is:
 Where:
 
 * n is the number of period time, Time is the length of time over which the interest is being calculated, usually expressed in years.
-* m is a factory of the time.
+* m is a factory of the time; for example 1 year is 12 months, monthly is 1 month.
+* bp is the buy power
 
 
 For example, if you borrow $10,000 at an interest rate of 5% per year for a period of 3 years, the interest would be calculated as follows:
 
-Interest = $10,000 x 0.05 x 3 = $1,500
-
-So the total amount you would have to pay back would be $10,000 + $1,500 = $11,500.
 
 It's important to note that this is just a basic formula for calculating simple interest. There are many other factors that can affect the interest calculation, such as compounding frequency, fees, and different types of loan structures, such as adjustable-rate mortgages.
 
@@ -299,8 +297,8 @@ If the borrower does not pay the payment, the lender can claim or redeem the NFT
 * @notice: lender can run the defaultAsset func if the borrower didn't make pay of current term, the lender needs to pay the interest fee in order to receive the NFT. 
 * @param nftreceipt/_counterId uint256 is the main id of the lending receipt. 
 * @param _counterId/ uint256 each term to pay the pre payment 
-* @param loanTimestampLoanPayment uint256 is an arry of the current term timestamp , and payment loan
-* @param preLoanTimes uint256 is an arry of the timestamp of the 0 index term
+* @param loanTimestampLoanPayment uint256 is an array of the current term timestamp , and payment loan
+* @param preLoanTimes uint256 is an array of the timestamp of the 0 index term
 * @param fee_ uint256 is the interest fees that need to be paid by the lender
 * @param proof bytes of the current _term 
 */
@@ -359,13 +357,13 @@ https://external-dev.swopx.com/execute/swopx/listings/extend
 /*
 * @notice:  borrower needs to submit the lender new proof to extend the time with a new timestamps and payment intereset 
             the offeredTime value has to be not expired with a current time.
-* @param nonces uint256 is an arry of borrower's nonce and lender's nonce.
+* @param nonces uint256 is an array of borrower's nonce and lender's nonce.
 * @param _counterId uint256 Id of the receipt NFT
 * @param loanInterest uint256 new total insterst 
 * @param currentTerm_ uint256 the cuurent term that already paid 
 * @param _offeredTime uint256  it has to be greater then current timestamp otherwise it will be expired offer
 * @param gist bytes32 new root
-* @param signatures bytes32 aare an arry of borrower's sig and the lender's sig
+* @param signatures bytes32 aare an array of borrower's sig and the lender's sig
 */
 const extendTheTime = await swopXLanding.connect(borrower).extendTheTime(nonces [2], _counterId,  loanInterest,  currentTerm_,  _offeredTime,  gist ,
 signatures [2]) 
