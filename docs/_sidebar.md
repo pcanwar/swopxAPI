@@ -20,9 +20,14 @@
 ** [Lender](lending/lender.md)
 
 
+* [ 🏦 API Endpoints Create][def4]
+** [Borrower](create/collections.md)
+
+
 [def1]: gettingStarted.md 
 [def2]: apiEndpoints.md
 [def3]: swopXcontractEndpoints.md
+[def4]: swopXcreateCollectionEndpoints.md
 
 
 
