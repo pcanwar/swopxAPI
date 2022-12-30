@@ -4,10 +4,6 @@ __Create Collection__
 
 * Submit Collection Request
 
-The address of the contract you need to interect with is
-
-
-
 
 ```API
 POST /listings/collections/create
