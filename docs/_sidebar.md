@@ -21,7 +21,8 @@
 
 
 * [ 🏦 API Endpoints Create][def4]
-** [Borrower](create/collections.md)
+** [Createor](create/collections.md)
+** [Client](create/client.md)
 
 
 [def1]: gettingStarted.md 

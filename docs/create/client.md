@@ -2,7 +2,10 @@
 
 ### Client:
 
-An client 
+An client can interect with any collections by implementing those functions to buy NFTs
+
+
+__Private Sale__
 
 ```
 /*
@@ -14,6 +17,7 @@ An client
     function whitelistSaleMint(address account, uint _numTokens, bytes32 [] calldata proof) 
 ```
 
+__Public Sale Using ETH__
 
 ```
     /*
@@ -22,6 +26,9 @@ An client
     */
     function publicSaleMint(uint256 numTokens) payable
 ```
+
+
+__Public Sale Using ERC20 Tokens__
 
 ```
 
@@ -32,3 +39,5 @@ An client
     function publicSaleMintCurrency(address paymentContract, uint256 numTokens) 
 
 ```
+
+
