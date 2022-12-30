@@ -6,9 +6,7 @@ __Create Collection__
 
 The address of the contract you need to interect with is
 
-```
-0x
-```
+
 
 
 ```API
@@ -44,9 +42,9 @@ https://external-dev.swopx.com/execute/swopx/listings/collections/create
 ```
 Example of submitting a request 
 {
-    "clientID": "61547e1de4e07643b12e6a15",
-    "collectionName": "Coll Name",
-    "collectionDescription": "Test Description 1",
+    "clientID": "6153b12e6a15",
+    "collectionName": "Call A Name",
+    "collectionDescription": " Description 1",
     "collectionSymbol": "FFF",
     "collectionAddress": "0xfff",
     "chainID": "1",
@@ -64,7 +62,51 @@ Example of submitting a request
 #### **Response**
 
 ```
-markle tree and root
+{
+    "success": true,
+    "data": {
+        "success": true,
+        "data": {
+            "isActive": true,
+            "imagesGeneratedStatus": "none",
+            "whitelist": {
+                "wallets": [
+                    "0x4b43246728B64a75A4c85A290cd32fE1F2aAef3c",
+                    "0x36C6A0793F10FaC5D98d851E8bEc40Aa7BB98FB3"
+                ],
+                "merkleTree": {
+                    "root": "0x76e6b1604e448bb87366e0e2af1d877eb707663a5aa94da5a1df941eb5c1ccfd",
+                    "proofs": [
+                        [
+                            "0x175687359eb197ac0e866c069190f4caff74123fd306678f9d34aa1550af3e44"
+                        ],
+                        [
+                            "0x5d3203555d66b460b3712cbf37feb021635320ccac5aaaddf73be44e782f009d"
+                        ]
+                    ]
+                }
+            },
+            "mints": [],
+            "mintedCount": 0,
+            "_id": "63af24065c4f9e3cf80d3c09",
+            "collectionName": "Coll Name",
+            "collectionDescription": "Test Description 1",
+            "collectionSymbol": "FFF",
+            "collectionAddress": "0xfff",
+            "chainID": "4",
+            "ownerAddress": "0xggg",
+            "totalSupply": 777,
+            "maxTokensPerWallet": 69,
+            "collectionIconImage": "ggg",
+            "collectionCoverImage": "tttt",
+            "owner": "6154823c0ed9bc47d454db9b",
+            "createdAt": "2022-12-30T17:46:46.036Z",
+            "updatedAt": "2022-12-30T17:46:46.036Z",
+            "__v": 0
+        }
+    }
+}
+
 ```
 
 <!-- tabs:end -->
@@ -140,7 +182,16 @@ Example of submitting a request
 #### **Response**
 
 ```
-markle tree and root
+{
+    "success": true,
+    "data": {
+        "success": true,
+        "data": {
+            "success": true
+        }
+    }
+}
+
 ```
 
 <!-- tabs:end -->
